@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working</title>
+    <link rel="stylesheet" href="css/syle.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.0.8/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar font-mono bg-white">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-black" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>tolol</a></li>
+              <li><a>tolol</a></li>
+              <li><a>ketololan</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center text-black">
+          <a class="btn btn-ghost text-xl ">HourlySalary!</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="font-mono text-white">
+        <h1 class="text-center font-mono text-6xl p-10">WELCOME TO HourlySalary!</h1>
+        <p class="text-center font-thin px-5 py-5">a place where you can convert your hourly working time into dollar. Not just that, you can also convert it into an invoice in just several clicks!</p>
+      </div>
+
+<!-- kartu 1 -->
+<div class="py-5">
+    <!-- bagian sini buat masukin berapa jam kerjanya -->
+    <div class="worker card w-96 bg-white shadow-xl mx-auto font-mono text-black">
+        <div class="card-body">
+          <h2 class="card-title text-center text-black">Insert workers name here</h2>
+          <input type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs text-white" />
+        
+        </div>
+      </div>
+</div>
+
+<!-- kartu 2 -->
+<div class="py-5">
+    <!-- bagian sini buat masukin berapa jam kerjanya -->
+    <div class="hour card w-96 bg-white shadow-xl mx-auto font-mono text-black">
+        <div class="card-body">
+          <h2 class="card-title text-center text-black">How long have you been workin?</h2>
+          <input type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs text-white" />
+        
+        </div>
+      </div>
+</div>
+
+<!-- kartu 3 -->
+<div class="py-5">
+    <!-- bagian sini buat masukin berapa jam kerjanya -->
+    <div class="desc card w-96 bg-white shadow-xl mx-auto font-mono text-black">
+        <div class="card-body">
+          <h2 class="card-title text-center text-black">Insert your job description</h2>
+          <input type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs text-white" />
+          
+        </div>
+      </div>
+</div>
+<div class="card-actions justify-center">
+    <button class="btn btn-outline">Submit</button>
+  </div>
+
+<div class="py-10">
+<!-- ini isinya udah output -->
+      <div class="card w-96 bg-neutral text-neutral-content font-mono mx-auto">
+        <div class="card-body items-center text-center">
+            <h1 class="text-2xl">Your salary is ($)</h1>
+            <h2 class="output text-5xl">1000</h2>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="py-10">
+    <div class="overflow-x-auto font-mono">
+        <h1 class="text-center text-6xl">HISTORY</h1>
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Job description</th>
+              <th>Cost ($)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- row 1 -->
+            <tr class="hover">
+              <th>1</th>
+              <td>Dewi Kusuma</td>
+              <td>Contoh kasus 1 pada A</td>
+              <td>2000</td>
+            </tr>
+            <!-- row 2 -->
+            <tr class="hover">
+              <th>2</th>
+              <td>Irfan Subianto</td>
+              <td>Contoh sengketa tanah di B</td>
+              <td>1200</td>
+            </tr>
+            <!-- row 3 -->
+            <tr class="hover">
+              <th>3</th>
+              <td>Putri Cahaya</td>
+              <td>Meeting Client dengan C</td>
+              <td>1000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
+
+
+
+<style>
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: rgb(255, 255, 255);
+    }
+    ::-webkit-scrollbar-thumb{
+        background: #000000;
+        border-radius: 10px;
+    }
+    .cursor{
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        transition: 0.1s;
+        transform: translate(-50%,-50%);
+        pointer-events: none;
+        mix-blend-mode: difference;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Menangkap elemen input dan button
+        var inputElement = document.querySelector('.input');
+        var submitButton = document.querySelector('.btn-outline');
+        var outputElement = document.querySelector('.output');
+
+        // Menambahkan event listener pada button untuk menghitung gaji
+        submitButton.addEventListener('click', function () {
+            // Mendapatkan nilai input dari pengguna
+            var hoursWorked = parseFloat(inputElement.value);
+
+            // Memastikan bahwa input adalah angka dan bukan teks atau karakter lain
+            if (!isNaN(hoursWorked)) {
+                // Menghitung gaji dengan mengalikan jam kerja dengan 1000
+                var salary = hoursWorked * 1000;
+
+                // Menampilkan hasil gaji di elemen output
+                outputElement.textContent = salary;
+            } else {
+                // Jika input bukan angka, tampilkan pesan kesalahan
+                alert('Please enter a valid number for hours worked.');
+            }
+        });
+    });
+</script>
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var nameInput = document.querySelector('.card-title:nth-child(1) + .input');
+        var hoursInput = document.querySelector('.card-title:nth-child(2) + .input');
+        var descInput = document.querySelector('.card-title:nth-child(3) + .input');
+        var submitButton = document.querySelector('.btn-outline');
+        var outputElement = document.querySelector('.output');
+        var historyTable = document.querySelector('.table tbody');
+
+        submitButton.addEventListener('click', function () {
+            var name = nameInput.value;
+            var hours = parseFloat(hoursInput.value);
+            var desc = descInput.value;
+
+            if (name && !isNaN(hours) && desc) {
+                var cost = hours * 1000;
+                outputElement.textContent = cost;
+
+                var newRow = historyTable.insertRow(-1);
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+                var cell3 = newRow.insertCell(2);
+                var cell4 = newRow.insertCell(3);
+
+                cell1.textContent = historyTable.rows.length;
+                cell2.textContent = name;
+                cell3.textContent = desc;
+                cell4.textContent = cost;
+
+                nameInput.value = '';
+                hoursInput.value = '';
+                descInput.value = '';
+            } else {
+                alert('Please fill in all the fields with valid information.');
+            }
+        });
+    });
+</script> -->
+
+
+
+</body>
+</html>
